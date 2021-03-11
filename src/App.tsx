@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../public/assets/logo.svg';
 import './App.css';
 
 function App() {
@@ -18,6 +18,11 @@ function App() {
         >
           Learn React
         </a>
+        <div className="m-5">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-red-300 mr-2">#HashTag</span>
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-red-300 mr-2">#HashTag</span>
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-red-300 mr-2">#HashTag</span>
+        </div>
       </header>
     </div>
   );
