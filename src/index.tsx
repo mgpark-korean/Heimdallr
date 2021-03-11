@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {SiteMapBoard} from "./siteMapBoard/SiteMapBoard";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SiteMapBoard />
   </React.StrictMode>,
   document.getElementById('root')
 );
