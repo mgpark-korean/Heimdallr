@@ -1,0 +1,12 @@
+{
+  "Git": {
+    "title": "My GitHub",
+    "href": "https://github.com/mgpark-korean",
+    "icon": "github_link_icon.png"
+  },
+  "Blog": {
+    "title": "My Blog",
+    "href": "https://gagamel-ect.tistory.com/",
+    "icon": "blog_link_icon.png"
+  }
+}
