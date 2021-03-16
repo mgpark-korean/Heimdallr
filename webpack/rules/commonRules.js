@@ -1,6 +1,3 @@
-// const loaderRules = require('./loader');
-// import {babelLoader} from "./loader";
-
 const commonRules = {
   typescriptRule: {
     test: /\.tsx?$/,

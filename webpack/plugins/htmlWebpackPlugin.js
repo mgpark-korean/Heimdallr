@@ -5,7 +5,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const globalVariable = require('../utils/globalVariable');
-// import {attetsLink} from "../utils/globalVariable";
 
 const config = {
   inject: 'true',

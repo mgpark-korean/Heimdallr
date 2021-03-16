@@ -1,7 +1,5 @@
 const path = require('path');
 const globalVariable = require('../utils/globalVariable');
-// import { join } from 'path';
-// import {rootDir} from "../utils/globalVariable";
 
 /**
  * @see : https://babeljs.io/docs/en/babel-preset-typescript
