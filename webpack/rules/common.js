@@ -1,6 +1,3 @@
-// const loaderRules = require('./loader');
-// import {babelLoader} from "./loader";
-
 const commonRules = {
   typescriptRule: {
     test: /\.tsx?$/,
@@ -14,9 +11,12 @@ const commonRules = {
   imageRule: {
     test: /\.(png|jpe?g|gif|svg)$/i,
     loader: 'file-loader',
-    options: {
-      outputPath: 'assets'
-    }
+    options: { outputPath: 'assets' }
+  },
+  urlRule: {
+    test: /\.(png|jpe?g|gif|svg)$/i,
+    loader: 'url-loader',
+    // options: { outputPath: globalVariable.outputAssetsPath }
   }
 }
 

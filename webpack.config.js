@@ -11,14 +11,14 @@ module.exports = {
   },
   output: {
     path: globalVariable.outputPath,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    // publicPath: 'dist/'
   },
   module: {
     rules: tools.arrayFilterEmpty([
       commonRules.typescriptRule,
       commonRules.cssRule,
-      commonRules.imageRule,
-      commonRules.svgRule
+      commonRules.imageRule
     ]),
   },
   plugins: tools.arrayFilterEmpty([

@@ -1,14 +1,15 @@
 import * as React from "react";
-import {LinkButtonProps} from "./LinkButtonProps";
-import {LinkButtonState} from "./LinkButtonState";
-import {DirectoryLocation} from "../lib/common/DirectoryLocation";
+import * as LinkBtnProps from "./LinkButtonProps.json";
+import GitIcon from "../assets/github_link_icon.png";
+import BLogIcon from '../assets/blog_link_icon.png';
 
-export class LinkButton extends React.Component<LinkButtonProps, LinkButtonState>{
+export class LinkButton extends React.Component<any, any>{
   render() {
     return (
-      <a href={this.props.herfUrl}>
-        <img src={DirectoryLocation.assetsLocation + this.props.iconUrl} alt={this.props.title}/> {this.props.title}
-      </a>
+        <React.Fragment>
+          <a href={LinkBtnProps.Blog.href}> <img src={BLogIcon} alt=''/> {LinkBtnProps.Blog.title} </a>
+          <a href={LinkBtnProps.Git.href}> <img src={GitIcon} alt=''/> {LinkBtnProps.Git.title} </a>
+        </React.Fragment>
     );
   }
 }
