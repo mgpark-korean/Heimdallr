@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as LinkBtnProps from "./LinkButtonProps.json";
+import LinkBtnProps from "./LinkButtonProps.json";
 import GitIcon from "../assets/github_link_icon.png";
 import BLogIcon from '../assets/blog_link_icon.png';
 
