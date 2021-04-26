@@ -1,5 +1,5 @@
 import React from "react";
-import {LinkButton} from "../LinkButton/LinkButton";
+import {LinkButton} from "../linkButton/LinkButton";
 
 export class SiteMapBoard extends React.Component<any, any> {
 
