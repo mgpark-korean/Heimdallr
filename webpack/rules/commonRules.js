@@ -16,7 +16,6 @@ const commonRules = {
   urlRule: {
     test: /\.(png|jpe?g|gif|svg)$/i,
     loader: 'url-loader',
-    // options: { outputPath: globalVariable.outputAssetsPath }
   }
 }
 

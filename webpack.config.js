@@ -13,7 +13,6 @@ module.exports = {
   output: {
     path: globalVariable.outputPath,
     filename: 'bundle.js',
-    // publicPath: 'dist/'
   },
   module: {
     rules: tools.arrayFilterEmpty([

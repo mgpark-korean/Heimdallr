@@ -4,10 +4,10 @@
  */
 
 module.exports = (api) => {
-  const mode = process.env.NODE_ENV === 'production';
+  const isProdMode = process.env.NODE_ENV === 'production';
 
   // This caches the Babel config by environment.
-  api.cache.using(() => mode);
+  api.cache.using(() => isProdMode);
 
   return {
     presets: [
@@ -15,6 +15,7 @@ module.exports = (api) => {
       '@babel/preset-typescript',
       '@babel/preset-react'
     ],
+    browserslistConfigFile: true,
     plugins: [
         '@babel/plugin-proposal-class-properties',
         '@babel/plugin-transform-typescript'
