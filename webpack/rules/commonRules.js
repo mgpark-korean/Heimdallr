@@ -9,13 +9,12 @@ const commonRules = {
     use: ['style-loader', 'css-loader', 'postcss-loader']
   },
   imageRule: {
-    test: /\.(png|jpe?g|gif|svg)$/i,
+    test: /\.(png|jpe?g|gif|jp2|webp|svg)$/,
     loader: 'file-loader',
-    options: { outputPath: 'assets' }
-  },
-  urlRule: {
-    test: /\.(png|jpe?g|gif|svg)$/i,
-    loader: 'url-loader',
+    options: {
+      name: '[name].[ext]',
+      outputPath: 'assets',
+    }
   }
 }
 
