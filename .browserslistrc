@@ -1,8 +1,3 @@
-[production]
 > 1%
-last 2 versions
-not ie <= 10
-
-[modern]
-
-[ssr]
+last 3 versions
+not ie <= 9

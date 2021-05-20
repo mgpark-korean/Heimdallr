@@ -18,7 +18,8 @@ module.exports = (api) => {
     browserslistConfigFile: true,
     plugins: [
         '@babel/plugin-proposal-class-properties',
-        '@babel/plugin-transform-typescript'
+        '@babel/plugin-transform-typescript',
+        '@emotion'
     ]
   }
 }
