@@ -1,12 +1,10 @@
-const tools = require('./webpack/utils/tools');
-const commonRules = require('./webpack/rules/commonRules');
-const htmlPlugins = require('./webpack/plugins/htmlWebpackPlugin');
-const globalVariable = require("./webpack/utils/globalVariable");
+const tools = require('./utils/tools');
+const commonRules = require('./rules/commonRules');
+const htmlPlugins = require('./plugins/htmlWebpackPlugin');
+const globalVariable = require("./utils/globalVariable");
 
 module.exports = {
   entry: globalVariable.appPath,
-  mode: process.env.NODE_ENV,
-  watch: globalVariable.isProdEnv,
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.css']
   },
