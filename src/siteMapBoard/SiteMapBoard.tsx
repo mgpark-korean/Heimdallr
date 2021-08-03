@@ -11,7 +11,7 @@ export class SiteMapBoard extends React.Component<any, any> {
           height: '100%',
           textAlign: 'center'
         })}>
-          <h1>Heimdallr SiteMaaㅁp</h1>
+          <h1>Heimdallr SiteSSSMap</h1>
           <div className={css({
             display: "inline-block",
             width: "70%",
@@ -19,8 +19,7 @@ export class SiteMapBoard extends React.Component<any, any> {
             paddingBottom: "2%",
             paddingLeft: "1%",
             paddingRight: "1%",
-            backgroundColor: "whitesmoke",
-            // textAlign: "left",
+            backgroundColor: "whitesmoke"
           })}>
             <LinkButton/>
           </div>
