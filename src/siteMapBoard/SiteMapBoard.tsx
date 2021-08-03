@@ -11,7 +11,7 @@ export class SiteMapBoard extends React.Component<any, any> {
           height: '100%',
           textAlign: 'center'
         })}>
-          <h1>Heimdallr SiteMap</h1>
+          <h1>Heimdallr SiteMaaㅁp</h1>
           <div className={css({
             display: "inline-block",
             width: "70%",

@@ -1,12 +1,12 @@
 # Heimdallr Sitemap
-리엑트 및 webpack, bable 스터디 목적으로 생성하였습니다.
+React, Webpack5, Babel, Gulp4 스터디 목적으로 생성한 블로그, GitHub, Notion 등 개인 SiteMap 입니다.
 
-### development build
+### build
 ``` bash
-npm run start
+gulp build --config [dev/prod]
 ```
 
-### production build
+### server connect
 ```bash
-npm run build
+gulp serve --config [dev/prod] --port [number:default is 80]
 ```
