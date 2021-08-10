@@ -20,9 +20,9 @@ export class LinkButton extends React.Component<any, any> {
 
   render() {
     return (
-        <div>
-          {LinkBtnProps.map((btnProp) => <a href={btnProp.href} className={LinkAtagStyle} key={btnProp.key}> <img src={btnProp.icon} alt={btnProp.key} className={LinkBtnImgStyle}/> {btnProp.title} </a>)}
-        </div>
+        LinkBtnProps.map( (btnProp) =>
+            <a href={btnProp.href} className={LinkAtagStyle} key={btnProp.key}> <img src={btnProp.icon} alt={btnProp.key} className={LinkBtnImgStyle}/> {btnProp.title} </a>
+        )
     );
   }
 }
