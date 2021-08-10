@@ -24,7 +24,7 @@ async function buildFile() {
   if (!configFile) {
     throw new gulpUtil.PluginError('build',
         'build Task commend :: Invalid argument!!\n'
-        + gulpUtil.colors.yellow('gulp build --config [dev/prod]'));
+        + gulpUtil.colors.yellow('gulp [task] --config [dev/prod]'));
   } else {
     webpack(configFile, function (err, stats) {
       if (err) {
@@ -47,7 +47,7 @@ function connectServer(port = 80) {
   });
 }
 
-function watchFile(config) {
+function watchFile() {
   watch('./src/*', () => {
     series(buildFile());
     dest('./dist/*').pipe(connect.reload());
@@ -58,13 +58,14 @@ async function serve() {
   const config = process.argv[4];
   const port = process.argv[6];
 
-  if (!config || !port || (config !== 'dev' && config !== 'prod') || isNaN(port * 1)) {
+  if (!config || !port || (config !== 'dev' && config !== 'prod') || isNaN(
+      port * 1)) {
     throw new gulpUtil.PluginError('serve',
         'server Task commend :: Invalid argument!!\n'
         + gulpUtil.colors.yellow('gulp serve --config [dev/prod] --port [number]'));
   }
-  watchFile(config);
-  connectServer(port*1);
+  watchFile();
+  connectServer(port * 1);
 }
 
 exports.serve = series(serve);

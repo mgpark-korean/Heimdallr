@@ -1,8 +1,5 @@
 import * as React from "react";
 import LinkBtnProps from "./LinkButtonProps.json";
-import GitIcon from "../assets/github_link_icon.png";
-import BLogIcon from '../assets/blog_link_icon.png';
-import NotionIcon from '../assets/notion_link_icon.png';
 import {css} from "@emotion/css";
 
 const LinkBtnImgStyle = css({
@@ -23,11 +20,9 @@ export class LinkButton extends React.Component<any, any> {
 
   render() {
     return (
-        <React.Fragment>
-          <a href={LinkBtnProps.Blog.href} className={LinkAtagStyle}> <img src={BLogIcon} alt='' className={LinkBtnImgStyle}/> {LinkBtnProps.Blog.title} </a>
-          <a href={LinkBtnProps.Git.href} className={LinkAtagStyle}> <img src={GitIcon} alt='' className={LinkBtnImgStyle}/> {LinkBtnProps.Git.title} </a>
-          <a href={LinkBtnProps.Notion.href} className={LinkAtagStyle}> <img src={NotionIcon} alt='' className={LinkBtnImgStyle}/> {LinkBtnProps.Notion.title} </a>
-        </React.Fragment>
+        <div>
+          {LinkBtnProps.map((btnProp) => <a href={btnProp.href} className={LinkAtagStyle} key={btnProp.key}> <img src={btnProp.icon} alt={btnProp.key} className={LinkBtnImgStyle}/> {btnProp.title} </a>)}
+        </div>
     );
   }
 }

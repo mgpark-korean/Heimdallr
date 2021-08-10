@@ -1,17 +1,20 @@
-{
-  "Git": {
+[
+  {
+    "key": "github",
     "title": "My GitHub",
     "href": "https://github.com/mgpark-korean",
     "icon": "../assets/github_link_icon.png"
   },
-  "Blog": {
+  {
+    "key": "blog",
     "title": "My Blog",
     "href": "https://gagamel-ect.tistory.com/",
     "icon": "../assets/blog_link_icon.png"
   },
-  "Notion": {
+  {
+    "key": "notion",
     "title": "My Notion",
     "href": "https://mgnote.notion.site/Dev-Note-5424d5f3504f4a85b099ba194b463d37",
     "icon": "../assets/notion_link_icon.png"
   }
-}
+]

@@ -20,7 +20,7 @@ module.exports = {
     ]),
   },
   plugins: tools.arrayFilterEmpty([
-    htmlPlugins.htmlWebpackPlugin
+      htmlPlugins.htmlWebpackPlugin
   ])
 }
 
